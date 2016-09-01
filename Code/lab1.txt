@@ -6,4 +6,4 @@
 6.     Copy a file to a new location: cp hello.txt ../rohit1
 7.     Search for a string in a file: grep -i 'create' lab1.txt
 8.     Access the shell of a remote machine: ssh
-9.     Remove a directory folder: rmdir
+9.     Remove a directory folder: rmdir rohit1
