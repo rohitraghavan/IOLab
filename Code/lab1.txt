@@ -1,0 +1,9 @@
+1.     Change Directory: cd Code
+2.     Create a Directory: mkdir rohit
+3.     Rename a Directory: mv rohit rohit1
+4.     List the contents of a directory: ls -ltr
+5.     Move a file to a new location: mv hello.txt ../rohit2
+6.     Copy a file to a new location: cp hello.txt ../rohit1
+7.     Search for a string in a file: grep -i 'create' lab1.txt
+8.     Access the shell of a remote machine: ssh
+9.     Remove a directory folder: rmdir
