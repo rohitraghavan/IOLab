@@ -48,11 +48,12 @@ table {
 
 body {
 	font-size: 18px;
+	background: #f0f0e0
 }
 
 header, footer {
 	width: 100%;
-	background: #4d94ff;
+	background: #808080;
 	color: #ffffff;
 	box-sizing: border-box;
 	height: 50px;
@@ -62,6 +63,7 @@ header, footer {
 
 header {
 	display: inline-block;
+	position: fixed;
 }
 
 footer {
@@ -99,6 +101,7 @@ a {
 	float: left;
 	width: 25%;
 	text-align: center;
+	font-family: Ariel, sans-serif;
 }
 
 .nav-button {
@@ -110,10 +113,11 @@ a {
 	border-left: 1px solid #ffffff;
 	border-right: 1px solid #ffffff;
 	margin-left: -5px;
+	font-family: Ariel, sans-serif;
 }
 
 .nav-button:hover {
-	background: #80b3ff;
+	background: #000000;
 }
 
 a.nav-button:visited {
