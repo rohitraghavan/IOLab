@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!--
 1. User sees labeled ‘to-do’ and ‘completed items’ lists, which are empty upon page load. The lists are visually distinct from each other.
 2. User can add one ‘to-do’ item at a time using a text input field and an ‘add to list’ button.
@@ -16,25 +17,69 @@ b. The ‘complete’ item appears at the top of the ‘to-do’ list with the s
 10. All of your JavaScript is commented appropriately.
 11. Your code is clean and concise (minimal repetition and unused code)-->
 
-<html>
-<head>
-
-    <title> Homework4 Javascript and jQuery </title>
-    <link rel="stylesheet" href="_css/style.css">
-
-</head>
+<html lang="en">
+	<head>
+		<meta tagset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>ToDo LIST</title>
+	    <link rel="stylesheet" href="css/bootstrap.min.css">
+	    <link  rel="stylesheet" href="css/bootstrap-theme.min.css">
+	    <link rel="stylesheet" href="css/style.css">
+	</head>
     <body>
-            <!-- create input tag for user input -->
-            <input>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+            	<div class="navbar-header">
+            		<a class="navbar-brand" href="#">ToDo List</a>
+            	</div>
+            </nav>
 
-            <!-- button takes input and adds a new element with content to 'list_do' -->
-            <button id="new-item"> </button>
+            <div class="container theme-showcase" role="main">
+
+            	<div class="jumbotron">
+            		<h1>ToDo</h1>
+            		<p> Enter an item in the textbox and hit Add to add to ToDo list. To move an item to the Completed list, click on the item in the ToDo list. To move back an item to the ToDo list, click on the item in the Completed list. To reorder items in the list, click an item and drag to the required position in the list.
+            	</div>
+
+            	<div class="row">
+            		<div class="col-lg-6">
+            			<div class="input-group">
+            				<input id="input-val" type="text" class="form-control" placeholder="I want to...">
+            				<span class="input-group-btn">
+            					<button id="new-item" type="button" class="btn btn-info">Add</button>
+            				</span>
+            			</div>
+            		</div>
+            	</div>
+
+            	<div class="row">
+            		<div class="col-lg-6">
+            			<div class="panel panel-info">
+            				<div class="panel-heading">ToDo</div>
+            				<ul id="list-todo" class="list-group">
+            				</ul>
+            			</div>
+            		</div>
+            		
+            		<div class="col-lg-6">
+            			<div class="panel panel-warning">
+            				<div class="panel-heading">Completed</div>
+            				<ul id="list-completed" class="list-group">
+            				</ul>
+            			</div>
+            		</div>
+            	</div>
+
+            </div>
 
 
             <!-- ability to move items between list_todo and list_completed -->
             <div id="list_todo"> </div>
             <div id="list_completed"> </div>
 
-            <script type="text/javascript" src="_js/main.js"> </script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script type="text/javascript" src="js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="js/main.js"> </script>
     </body>
 </html>

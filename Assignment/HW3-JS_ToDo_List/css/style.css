@@ -1,0 +1,26 @@
+/* Add CSS */
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.row {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#list-todo .glyphicon, #list-completed .glyphicon{
+	margin-right: 5px;
+}
+
+#list-todo .list-group-item {
+	color: #31708f;
+	word-wrap: break-word;
+}
+
+#list-completed .list-group-item {
+	color: #8a6d3b;
+	word-wrap: break-word;
+}
+
+
