@@ -1,0 +1,13 @@
+First, run mylocalserver.py in the terminal and ask your neighbor to access your webpage. To do this, you need to disable firewall and find out your IPV4 address. 
+
+Second, once you can do that, you can also run runmyserver.py and then run echo_client.py and observe what's going on in the terminal. 
+
+The point is the lab is to give you some exposure to server and client interaction and just try to understand the code as much as you can. Don’t worry too much!
+
+For extra credits, there are two options:
+
+1) Try to set up the webpage so your neighbor can input data and it will be reflected on the webpage
+
+2) Try to make the communication between runmyserver.py and echo_client.py continous and interesting! 
+
+

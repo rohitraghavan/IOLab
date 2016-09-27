@@ -1,0 +1,18 @@
+.navbar-brand {
+    background: #f50;
+}
+
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background-color: #f1f1f1;
+}
+
+.row {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.art {
+	font-style: italic;
+}
