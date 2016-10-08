@@ -17,6 +17,14 @@
             </tr>
           </thead>
 <!-- code to display all user -->
+            
+              {% for customer in customers %}
+              <tr>
+                <td> {{ customer['company']}} </td>
+                <td> {{ customer['email']}} </td>
+              </tr>
+              {% endfor %}
+            
         </table>
       </div>
     </div>
