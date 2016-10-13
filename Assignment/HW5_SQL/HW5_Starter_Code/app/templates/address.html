@@ -5,39 +5,13 @@
     <div class= "section">
       <a href="{{ url_for('display_customer') }}">Home</a>
     </div>
-    <h4>Add a Customer to Our Database</h4>
+    <h4>Add an Address</h4>
     
     <form action="" method="post" name="login">
       {{ form.hidden_tag() }}
       
       <div class="divider"></div>
       <div class="section">
-        <p>
-          Customer First Name:<br>
-          {{ form.first_name(size=120) }}<br>
-        </p>
-        <p>
-          Customer Last Name:<br>
-          {{ form.last_name(size=120) }}<br>
-        </p>
-        <p>
-          Company Name:<br>
-          {{ form.company(size=120) }}<br>
-        </p>
-        <p>
-          Customer Email:<br>
-          {{ form.email(size=120) }}<br>
-        </p>
-        <p>
-          Customer Phone:<br>
-          {{ form.phone(size=120) }}<br>
-        </p>
-      </div>
-
-      <h5>Customer Address</h5>
-      <div class="divider"></div>
-      <div class="section">
-        <!-- Additional form fields for the Address should go here -->
         <p>
           Street Address:<br>
           {{ form.street_address(size=120) }}<br>
@@ -59,7 +33,7 @@
           {{ form.zip_code(size=120) }}<br>
         </p>
       </div>
-      <p><input type="submit" value="Create Customer"></p>
+      <p><input type="submit" value="Create Address"></p>
 
     </form>
     
