@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <h1>Welcome to MegaLab Travel App</h1>
+      <div class= "section">
+        <a href="{{ url_for('create_trip') }}">Create a Trip</a>
+        |
+        Logged in as: {{ user }}
+        <a href="{{ url_for('logout') }}">Logout</a>
+      </div>
+      <div class="divider"></div>
+      <div class="section">
+        <h3>You have the below trips</h3>
+        <table class="striped">
+          <thead>
+            <tr>
+              <th data-field="trip_name">Trip Name</th>
+              <th data-field="destinaton">Destination</th>
+              <th data-field="friend1">Friend 1</th>
+              <th data-field="friend2">Friend 2</th>
+            </tr>
+          </thead>
+            
+              {% for trip in trips %}
+              <tr>
+                <td> {{ trip['trip_name']}} </td>
+                <td> {{ trip['destination']}} </td>
+                <td> {{ trip['friend1']}} </td>
+                <td> {{ trip['friend2']}} </td>
+                <td><button type="button" class="delete-row">Delete</button></td>
+              </tr>
+              {% endfor %}
+            
+        </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}

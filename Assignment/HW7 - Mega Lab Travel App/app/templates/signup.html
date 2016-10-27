@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <h4>Create a User</h4>
+    
+    <form action="" method="post" name="create_user">
+      {{ form.hidden_tag() }}
+      
+      <div class="divider"></div>
+      <div class="section">
+        <p>
+          User Name:<br>
+          {{ form.user_name(size=120) }}<br>
+        </p>
+        <p>
+          Password:<br>
+          {{ form.password(size=120) }}<br>
+        </p>
+      </div>
+      <p><input type="submit" value="Create User"></p>
+    </form>
+    
+  </div>
+</div>
+{% endblock %}
